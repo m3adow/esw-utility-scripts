@@ -1,0 +1,17 @@
+paths = [
+    # Supports strftime strings (no iterations though)
+    "/tmp/first/dir",
+    "/home/foobar/second-dir/%Y/%m"
+]
+
+# Maximum file age in minutes
+max_age = 60
+
+[new_image]
+# If a picture is bigger than one of these, it will be resized proportionally
+max_width = 1500
+max_height = 1500
+# Add this suffix to newly generated files; Also, files with this suffix will be ignored to prevent recursion
+suffix = "_compressed"
+# Default value of PIL is 75
+jpeg_quality = 75
